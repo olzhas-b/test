@@ -1,10 +1,8 @@
 package main
 
-import "github.com/gin-gonic/gin"
-
+func sum(a, b int) int {
+	return a + b
+}
 func main() {
-	var a int
-	r := gin.Default()
-	r.Run(":8080")
-	print(a)
+	println(sum(5, 10))
 }
